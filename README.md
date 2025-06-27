@@ -215,7 +215,7 @@ infuze rollback last-stable --force
 
 ### Recommended Repo Structure:
 ```
-infuze-cloud-demo/
+infuze-tutorial/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml
