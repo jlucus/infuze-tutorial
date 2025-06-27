@@ -110,14 +110,142 @@ infuze rollback prod-previous-version-id
 ✅ Rollback complete! Zero downtime
 ```
 
+
 ## 🔐 Security Features
 ```mermaid
-pie
-    title Security Layers
-    “TLS 1.3 Encryption” : 35
-    “Content Integrity Checks” : 25
-    “DDoS Protection” : 20
-    “WAF Rules” : 20
+graph TD
+    A[Infuze Security] --> B[Infrastructure]
+    A --> C[Deployment]
+    A --> D[Runtime]
+    
+    B --> B1[TLS 1.3 Everywhere]
+    B --> B2[Zero Trust Network]
+    B --> B3[FIPS 140-2 Compliance]
+    
+    C --> C1[Immutable Builds]
+    C --> C2[Content Integrity Checks]
+    C --> C3[RBAC Deployment Controls]
+    
+    D --> D1[DDoS Protection]
+    D --> D2[WAF Rule Engine]
+    D --> D3[Automated Vulnerability Scanning]
+```
+
+### Security Implementation Details:
+1. **Infrastructure Security**
+   - `TLS 1.3 Everywhere`: All data in transit encrypted with modern protocols
+   - `Zero Trust Network`: Strict microsegmentation between components
+   - `FIPS 140-2 Compliance`: Cryptographic module validation
+
+2. **Deployment Security**
+   - `Immutable Builds`: SHA-256 verified artifacts that can't be modified post-build
+   - `Content Integrity Checks`: Automatic hash verification during CDN propagation
+   - `RBAC Deployment Controls`: Role-based access control for deployment actions
+
+3. **Runtime Protection**
+   - `DDoS Protection`: Automatic traffic scrubbing at edge locations
+   - `WAF Rule Engine`: Custom rulesets for OWASP Top 10 vulnerabilities
+   - `Automated Vulnerability Scanning`: Daily scans of live deployments
+
+```mermaid
+journey
+    title Security Lifecycle
+    section Deployment Flow
+      Build: 5: Infuze
+      Scan: 5: Security Team
+      Deploy: 4: Infuze
+      Monitor: 7: SOC
+    section Incident Response
+      Detect: 8: Automated Systems
+      Respond: 6: Security Engineers
+      Remediate: 9: Infuze Rollback
+      Improve: 7: Protocol Updates
+```
+
+### Key Security Metrics
+```bash
+infuze security-report
+```
+```terminal
+SECURITY STATUS: ✅ Verified
+LAST SCAN: 2023-11-15 14:30:22 UTC
+VULNERABILITIES:
+  • Critical: 0
+  • High: 0
+  • Medium: 2 (patched)
+CERTIFICATIONS:
+  • SOC 2 Type II: Compliant
+  • ISO 27001: Certified
+  • PCI DSS: Level 1
+```
+
+
+
+## 🔐 Security Features
+```mermaid
+graph TD
+    A[Infuze Security] --> B[Infrastructure]
+    A --> C[Deployment]
+    A --> D[Runtime]
+    
+    B --> B1[TLS 1.3 Everywhere]
+    B --> B2[Zero Trust Network]
+    B --> B3[FIPS 140-2 Compliance]
+    
+    C --> C1[Immutable Builds]
+    C --> C2[Content Integrity Checks]
+    C --> C3[RBAC Deployment Controls]
+    
+    D --> D1[DDoS Protection]
+    D --> D2[WAF Rule Engine]
+    D --> D3[Automated Vulnerability Scanning]
+```
+
+### Security Implementation
+**Infrastructure Layer**  
+- All data encrypted in transit with TLS 1.3 (RFC 8446)  
+- Zero Trust architecture with mutual TLS authentication  
+- FIPS 140-2 Level 3 validated cryptographic modules  
+
+**Deployment Assurance**  
+- Build artifacts cryptographically hashed (SHA-256)  
+- Automated SBOM generation for all dependencies  
+- Deployment roles with granular permissions (view/deploy/rollback)  
+
+**Runtime Protection**  
+- Anycast network absorbs >5Tbps DDoS attacks  
+- Custom WAF rules against OWASP Top 10 threats  
+- Daily automated scans for CVE vulnerabilities  
+
+
+```mermaid
+journey
+    title Security Lifecycle
+    section Deployment Flow
+      Build: 5: Infuze
+      Scan: 5: Security Team
+      Deploy: 4: Infuze
+      Monitor: 7: SOC
+    section Incident Response
+      Detect: 8: Automated Systems
+      Respond: 6: Security Engineers
+      Remediate: 9: Infuze Rollback
+      Improve: 7: Protocol Updates
+```
+
+**Compliance Status**  
+```bash
+infuze compliance --show-certificates
+```
+
+```terminal
+✅ SOC 2 Type II: Valid through 2024-12-31
+✅ ISO 27001:2022: Certificate #IN-78945
+✅ PCI DSS v4.0: Level 1 Service Provider
+🚫 HIPAA: Not enabled (use --enable-hipaa)
+```
+
+[View Full Security White Paper](https://infuze.dev/security.pdf)
 ```
 
 ## ⚡ Performance Optimization
