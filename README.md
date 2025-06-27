@@ -21,7 +21,7 @@ graph LR
 
 ## ⚙️ Installation & Setup
 
-### 1. Install CLI Tool
+### 1. Install API Tool With NPM
 ```bash
 npm install -g infuze
 ```
@@ -182,7 +182,7 @@ infuze rollback last-stable --force
 > **Get Started**  
 > [Create Account](https://cloud.infuze.dev/signup) • 
 > [Documentation](https://docs.infuze.dev) • 
-> [CLI Reference](https://cli.infuze.dev)
+> [api Reference](https://api.infuze.dev)
 
 [![Deploy with Infuze](https://img.shields.io/badge/Deploy_Example_Site-3423A6?style=for-the-badge)](https://cloud.infuze.dev/deploy?template=nextjs)
 ```
