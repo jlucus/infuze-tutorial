@@ -176,55 +176,12 @@ infuze rollback last-stable --force
 
 ---
 > **Get Started**  
-> [Create Account](https://cloud.infuze.dev/signup) • 
-> [Documentation](https://docs.infuze.dev) • 
-> [api Reference](https://api.infuze.dev)
+> [Create Account](https://infuze.cloud/signup) • 
+> [Documentation](https://docs.infuze.cloud) • 
+> [api Reference](https://api.infuze.cloud)
 
-[![Deploy with Infuze](https://img.shields.io/badge/Deploy_Example_Site-3423A6?style=for-the-badge)](https://cloud.infuze.dev/deploy?template=nextjs)
-```
+[![Deploy with Infuze](https://img.shields.io/badge/Deploy_Example_Site-3423A6?style=for-the-badge)](https://infuze.cloud/deploy?template=nextjs)
 
----
-
-### Key Features Showcased:
-1. **Atomic Deployments**  
-   - Version-pinned URLs (`cdn.jlucus.dev/p/prod-1x8f9k`)
-   - Zero-downtime cutovers
-   - Immutable releases
-
-2. **Infuze Cloud Integration**  
-   - Managed global CDN
-   - Built-in DDoS protection
-   - Automatic HTTP/3 support
-
-3. **Visual Workflows**  
-   - Mermaid deployment diagram
-   - Security layers pie chart
-   - Color-coded terminal output
-
-4. **Enterprise-Grade Features**  
-   - Multi-provider failover (Infuze + AWS S3)
-   - Performance optimization pipeline
-   - Real-time metrics monitoring
-
-5. **DevOps Ready**  
-   - GitHub Actions template
-   - One-command rollbacks
-   - Log inspection tools
-
----
-
-### Recommended Repo Structure:
-```
-infuze-tutorial/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
-├── public/
-├── src/
-├── infuze.config.js
-├── package.json
-└── README.md (this tutorial)
-```
 
 Save this as `README.md` in your demo repository. For immediate testing, create a live demo with:
 
@@ -232,6 +189,5 @@ Save this as `README.md` in your demo repository. For immediate testing, create 
 npx create-infuze-app@latest my-demo-site
 cd my-demo-site
 infuze deploy --test
-```
 
-[Download this tutorial as markdown file](https://gist.githubusercontent.com/jlucus/infuze-tutorial/main/README.md)
+
