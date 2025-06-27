@@ -1,17 +1,13 @@
-# infuze-tutorial
+# 🚀 Infuze Cloud Deployment Tutorial  
 Infuze Web Hosting Tutorial: Getting Started With Infuze.Cloud
 
-Here's your downloadable markdown tutorial for Infuze Cloud deployment, designed as a standalone GitHub repo guide:
-
-```markdown
-# 🚀 Infuze Cloud Deployment Tutorial  
 **Atomic deployments with zero-downtime rollbacks**  
 [![Infuze Version](https://img.shields.io/badge/Infuze-1.2.0-3423A6)](https://npmjs.com/package/infuze) 
 [![Deployment Time](https://img.shields.io/badge/Deployment_Time-<800ms-success)]()
 
 ```mermaid
 graph LR
-    A[Developer] -->|infuze deploy| B(Infuze Cloud)
+    A[Developer] -->|infuze deploy|B(Infuze Cloud)
     B --> C[Build Assets]
     C --> D[Compress]
     D --> E[Upload to CDN]
